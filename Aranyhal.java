@@ -1,17 +1,18 @@
 
 package aranyhal;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Aranyhal {
-    private static final int KIVANSAGOKSZAM = 3;
+    private static final int KIVANSAGOKSZAMA = 3;
     private int kor;
-    private ArrayList<String> kivansagok;
+    private HashMap<String,Integer> kivansagok;
     private String kifogta;
 
     public Aranyhal(int kor, String kifogta) {
         this.kor = kor;
         setKifogta(kifogta);
+        this.kivansagok =  new HashMap<>();
     }
     
     public Aranyhal(String kifogta){
