@@ -11,7 +11,7 @@ public class Aranyhal {
 
     public Aranyhal(int kor, String kifogta) {
         this.kor = kor;
-        this.kifogta = kifogta;
+        setKifogta(kifogta);
     }
     
     public Aranyhal(String kifogta){
